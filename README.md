@@ -20,10 +20,10 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <img src="./public/leaflet-icon.svg" alt="Leaflet" width="140" height="140" style="margin: 0 10px;" />
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" width="60" height="60" style="margin: 0 10px;" />
 </p>
+</div>
 - Live Demo: 
 - ChatGpt Projrct:  https://chatgpt.com/g/g-p-68ffa0dfd7488191944de8eb125710b5-earthquake-visualizer-aganitha-exercise/shared/c/68ffb56a-5050-8324-8590-267b1868c24a?owner_user_id=user-XHlS63Ryqi1ROuNhWbLgTamR
 
-</div>
 
 The Challenge: Casey, a geography student, needs to visualize recent earthquake activity to understand global seismic patterns, plate tectonics, and high-risk zones. This project is a direct response to that need, built as a take-home challenge.
 
