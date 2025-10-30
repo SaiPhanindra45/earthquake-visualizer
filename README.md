@@ -17,7 +17,7 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <p align="center">
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" width="60" height="60" style="margin: 0 10px;" />
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png" alt="Vite" width="60" height="60" style="margin: 0 10px;" />
-<img src="./public/leaflet-icon.svg" alt="Leaflet" width="60" height="60" style="margin: 0 10px;" />
+<img src="./public/leaflet-icon.svg" alt="Leaflet" width="140" height="140" style="margin: 0 10px;" />
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" width="60" height="60" style="margin: 0 10px;" />
 </p>
 🔗 Live Demo  | 💬 AI Design Process
