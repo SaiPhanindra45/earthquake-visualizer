@@ -49,86 +49,80 @@ API Errors: Displays a clear error message if the USGS data fails to load.
 
 UI Errors: The map is wrapped in a React ErrorBoundary to prevent the entire application from crashing.
 
-** Clean Architecture:** All data-fetching and state management logic is abstracted into a custom useEarthquakeData hook.
-
-📱 Fully Responsive: A mobile-first layout that works on all devices.
-
-🛠️ Tech Stack
-
-This table is inspired by the "Pattern Craft" README, explaining not just the "what" but the "why."
-
-Purpose
-
-Technology
-
-Why
-
-Framework
-
-React 18 + Vite
-
-Fast dev server & modern React features. Required by the challenge.
-
-Mapping
-
-Leaflet + react-leaflet
-
-Recommended by the challenge; lightweight, open-source, and powerful.
-
-Styling
-
-Tailwind CSS
-
-Rapid, utility-first UI development for a clean, modern look.
-
-Data Fetching
-
-axios
-
-Simple, promise-based HTTP client for fetching GeoJSON data.
-
-State
-
-React Hooks
-
-useState, useEffect for clean, local state management. No over-engineering.
-
-🏗️ Architecture Decisions
-
-This is why the app is built this way.
-
-1. useEarthquakeData Custom Hook
-
-I abstracted all data fetching, data cleaning (like reversing coordinates), and state management (loading, error, data) into a single custom hook. This follows the Single Responsibility Principle, keeping App.jsx clean and focused purely on layout and state-passing.
-
-2. React.lazy + <Suspense>
-
-Mapping libraries like Leaflet are large and can slow down the initial page load. To provide an instant "Time to Interactive," I lazy-load the EarthquakeMap component. This means the user gets the accessible list and loading skeleton immediately, while the heavier map bundle is fetched in the background.
-
-3. Accessibility First (Map + List)
-
-A map is a visual component and is not fully accessible to all users (especially screen readers). To solve this, I built a parallel EarthquakeList component that displays the exact same data in a semantic, sortable <ul>. This ensures Casey (and all users) can access the information, demonstrating a commitment to inclusive design.
-
-🚀 Getting Started
-
-Clone the repository:
-
-git clone [https://github.com/your-username/earthquake-viz.git](https://github.com/your-username/earthquake-viz.git)
-cd earthquake-viz
+| Feature                       | Description                                                                          |
+| ----------------------------- | ------------------------------------------------------------------------------------ |
+| 📍 **Interactive Global Map** | Real-time earthquake data visualized using **react-leaflet**.                        |
+| 📊 **Accessible Data List**   | Screen-reader-friendly event list, sortable by magnitude or time.                    |
+| 🚀 **High Performance**       | The heavy `EarthquakeMap` component is **lazy-loaded** for instant first paint.      |
+| 🛡️ **Robust Error Handling** | Gracefully handles API or UI errors via a React **ErrorBoundary**.                   |
+| 🧩 **Clean Architecture**     | All data fetching and state logic abstracted into a `useEarthquakeData` custom hook. |
+| 📱 **Fully Responsive**       | Tailwind CSS ensures mobile-first, adaptive design across devices.                   |
 
 
-Install dependencies:
-(This project uses npm, but you can use yarn or pnpm)
+| Purpose              | Technology                            | Why It Was Chosen                                                          |
+| -------------------- | ------------------------------------- | -------------------------------------------------------------------------- |
+| **Framework**        | React 18 + Vite                       | Fast dev server, modern React features, minimal setup overhead.            |
+| **Mapping**          | Leaflet + React-Leaflet               | Lightweight, open-source, and specifically recommended by the challenge.   |
+| **Styling**          | Tailwind CSS                          | Utility-first styling for clean, modern UI and rapid development.          |
+| **Data Fetching**    | Axios                                 | Simple, promise-based HTTP client for handling GeoJSON.                    |
+| **State Management** | React Hooks (`useState`, `useEffect`) | Lightweight, local state—no over-engineering with Redux or Context needed. |
 
+
+## 🌐 Data Source
+
+All earthquake data is provided by the USGS Earthquake Hazards Program API:
+
+```
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+```
+
+For historical datasets, the app can also load offline GeoJSON files (e.g., earthquakes_2000_2025.geojson) to visualize long-term seismic trends.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/megh-bari/pattern-craft.git
+cd pattern-craft
+```
+
+2. Install dependencies:
+
+```bash
 npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
+3. Run the development server:
 
-Run the development server:
-
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Open http://localhost:5173 in your browser.
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
 
 🔮 Future Improvements
 
