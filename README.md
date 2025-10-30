@@ -80,22 +80,58 @@ Mapping libraries are large. To provide an instant "Time to Interactive," I lazy
 
 A map is a visual component and is not fully accessible to all users. I built a parallel EarthquakeList component that displays the exact same data in a semantic, sortable <ul>. This ensures Casey (and all users) can access the information, a key "impress them" feature.
 
-🚀 Getting Started
+## Getting Started
 
-Clone the repository:
+### Prerequisites
 
-git clone [https://github.com/your-username/earthquake-viz.git](https://github.com/your-username/earthquake-viz.git)
-cd earthquake-viz
+- Node.js 18+
+- npm, yarn, pnpm, or bun
 
+### Installation
 
-Install dependencies:
+1. Clone the repository:
 
+```bash
+git clone https://github.com/megh-bari/pattern-craft.git
+cd pattern-craft
+```
+
+2. Install dependencies:
+
+```bash
 npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
+3. Run the development server:
 
-Run the development server:
-
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## How to Use This
+
+1. Visit the live site: **[https://patterncraft.fun](https://pattern-craft.vercel.app/)**
+2. Browse through the collection of background patterns and gradients.
+3. Click on any pattern to open its preview modal.
+4. Copy the CSS/Tailwind-compatible code snippet.
+5. Paste it into your project wherever needed — it's responsive, clean, and ready to go!
 
 
 🔮 Future Improvements
