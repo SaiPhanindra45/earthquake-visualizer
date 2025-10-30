@@ -20,7 +20,7 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <img src="./public/leaflet-icon.svg" alt="Leaflet" width="140" height="140" style="margin: 0 10px;" />
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" width="60" height="60" style="margin: 0 10px;" />
 </p>
-🔗 Live Demo  | 💬 AI Design Process
+🔗 [Live Demo]()  | 💬 [AI Design Process](https://chatgpt.com/g/g-p-68ffa0dfd7488191944de8eb125710b5-earthquake-visualizer-aganitha-exercise/shared/c/68ffb56a-5050-8324-8590-267b1868c24a?owner_user_id=user-XHlS63Ryqi1ROuNhWbLgTamR)
 
 </div>
 
@@ -48,7 +48,7 @@ A desktop and mobile screenshot will show off your responsive design.
 API Errors: Displays a clear error message if the USGS data fails to load.
 
 UI Errors: The map is wrapped in a React ErrorBoundary to prevent the entire application from crashing.
-
+## ✨ Key Features
 | Feature                       | Description                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
 | 📍 **Interactive Global Map** | Real-time earthquake data visualized using **react-leaflet**.                        |
@@ -58,7 +58,7 @@ UI Errors: The map is wrapped in a React ErrorBoundary to prevent the entire app
 | 🧩 **Clean Architecture**     | All data fetching and state logic abstracted into a `useEarthquakeData` custom hook. |
 | 📱 **Fully Responsive**       | Tailwind CSS ensures mobile-first, adaptive design across devices.                   |
 
-
+## 🛠️ Tech Stack & Purpose
 | Purpose              | Technology                            | Why It Was Chosen                                                          |
 | -------------------- | ------------------------------------- | -------------------------------------------------------------------------- |
 | **Framework**        | React 18 + Vite                       | Fast dev server, modern React features, minimal setup overhead.            |
@@ -137,5 +137,5 @@ Plate Tectonics Overlay: Add a GeoJSON overlay to show plate boundaries, providi
 Fly-to Animation: When a user clicks an item in the list, have the Leaflet map animate to that marker's coordinates.
 
 <p align="center">
-Built by [Your Name] for the take-home challenge.
+Built by Phanindra for the take-home challenge.
 </p>
