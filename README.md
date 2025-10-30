@@ -32,15 +32,7 @@ A desktop and mobile screenshot will show off your responsive design.
 -->
 
 <p align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x450%3Ftext%3DYour%2BApp%2BScreenshot%2B(Desktop)" alt="App Screenshot Desktop" width="80%"/>
-
-
-
-
-
-
-
-<img src="https://www.google.com/search?q=https://placehold.co/300x600%3Ftext%3DYour%2BApp%2BScreenshot%2B(Mobile)" alt="App Screenshot Mobile" height="400"/>
+<img src="./public/mockup.png" alt="App Screenshot Desktop" width="80%"/>
 </p>
 
 ✨ Key Features
