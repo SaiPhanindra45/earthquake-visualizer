@@ -20,7 +20,6 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/Leaflet-1.9-199900%3Fstyle%3Dfor-the-badge%26logo%3Dleaflet" alt="Leaflet" />
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/TailwindCSS-3-06B6D4%3Fstyle%3Dfor-the-badge%26logo%3Dtailwindcss" alt="Tailwind CSS" />
 </p>
-
 🔗 Live Demo  | 💬 AI Design Process
 
 </div>
