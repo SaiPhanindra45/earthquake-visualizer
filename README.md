@@ -1,16 +1,107 @@
-# React + Vite
+🌍 Earthquake Visualizer - Seismic Pattern Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive real-time earthquake visualization tool for geographic analysis and education.
 
-Currently, two official plugins are available:
+🔗 Live Demo | 💬 AI Design Process
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- TODO: Add a screenshot of your app! -->
 
-## React Compiler
+🎯 The Challenge
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Casey, a geography student, needs to visualize recent earthquake activity to understand global seismic patterns, plate tectonics, and high-risk zones.
 
-## Expanding the ESLint configuration
+✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📍 Interactive Global Map: Real-time earthquake data from USGS rendered with react-leaflet.
+
+📊 Accessible Data List: A screen-reader-friendly list of all events, sortable by magnitude or time.
+
+🚀 High-Performance: The heavy EarthquakeMap component is lazy-loaded using React.lazy and <Suspense> to ensure a fast initial page load.
+
+🛡️ Robust Error Handling:
+
+API Errors: Displays a clear error message if the USGS data fails to load.
+
+UI Errors: The map is wrapped in a React ErrorBoundary to prevent the entire application from crashing.
+
+Clean Architecture: All data-fetching and state management logic is abstracted into a custom useEarthquakeData hook.
+
+📱 Fully Responsive: A mobile-first layout that works on all devices.
+
+🛠️ Technology Stack
+
+Purpose
+
+Technology
+
+Why
+
+Framework
+
+React 18 + Vite
+
+Fast dev server & modern React features.
+
+Mapping
+
+Leaflet + react-leaflet
+
+Recommended by the challenge; lightweight and powerful.
+
+Styling
+
+Tailwind CSS
+
+Rapid, utility-first UI development.
+
+Data Fetching
+
+axios
+
+Simple, promise-based HTTP client.
+
+State
+
+React Hooks
+
+useState, useEffect for clean, local state management.
+
+🏗️ Architecture Decisions
+
+1. useEarthquakeData Custom Hook
+
+I abstracted all data fetching, cleaning, and state management (loading, error, data) into a single custom hook. This follows the Single Responsibility Principle, keeping App.jsx clean and focused on layout.
+
+2. React.lazy + <Suspense>
+
+Mapping libraries are large. To provide an instant "Time to Interactive," I lazy-load the EarthquakeMap component. This means the user gets the accessible list and loading skeleton immediately, while the map bundle is fetched in the background.
+
+3. Accessibility First (Map + List)
+
+A map is a visual component and is not fully accessible to all users. I built a parallel EarthquakeList component that displays the exact same data in a semantic, sortable <ul>. This ensures Casey (and all users) can access the information, a key "impress them" feature.
+
+🚀 Getting Started
+
+Clone the repository:
+
+git clone [https://github.com/your-username/earthquake-viz.git](https://github.com/your-username/earthquake-viz.git)
+cd earthquake-viz
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+🔮 Future Improvements
+
+Color-Coded Markers: Change marker color based on magnitude.
+
+Time Filter: Add a dropdown to show data from the "Past Week" or "Past Month".
+
+Plate Tectonics Overlay: Add a GeoJSON overlay to show plate boundaries, providing direct context for why earthquakes happen where they do.
