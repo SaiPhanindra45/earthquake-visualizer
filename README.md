@@ -15,10 +15,10 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <!-- STATIC BADGES FOR YOUR TECH STACK -->
 
 <p>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/React-18-61DAFB%3Fstyle%3Dfor-the-badge%26logo%3Dreact" alt="React" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Vite-5-646CFF%3Fstyle%3Dfor-the-badge%26logo%3Dvite" alt="Vite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Leaflet-1.9-199900%3Fstyle%3Dfor-the-badge%26logo%3Dleaflet" alt="Leaflet" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/TailwindCSS-3-06B6D4%3Fstyle%3Dfor-the-badge%26logo%3Dtailwindcss" alt="Tailwind CSS" />
+<img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" />
+<img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png" alt="Vite" />
+<img  src="./public/leaflet-icon.svg" alt="Leaflet" />
+<img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" />
 </p>
 🔗 Live Demo  | 💬 AI Design Process
 
