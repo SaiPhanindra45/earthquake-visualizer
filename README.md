@@ -21,12 +21,15 @@ An interactive tool built for "Casey," a geography student, to visualize and und
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" width="60" height="60" style="margin: 0 10px;" />
 </p>
 </div>
-- <p href="https://earthquake-visualizer-kfuwa1m7m-saiphanindra45s-projects.vercel.app/">Live Demo</p>: 
+<h1 >Live Demo</h1>
 <br>
-- ChatGpt Projrct:  https://chatgpt.com/g/g-p-68ffa0dfd7488191944de8eb125710b5-earthquake-visualizer-aganitha-exercise/shared/c/68ffb56a-5050-8324-8590-267b1868c24a?owner_user_id=user-XHlS63Ryqi1ROuNhWbLgTamR
+https://earthquake-visualizer-kfuwa1m7m-saiphanindra45s-projects.vercel.app/
+<h1 >ChatGpt Project</h1>
+https://chatgpt.com/g/g-p-68ffa0dfd7488191944de8eb125710b5-earthquake-visualizer-aganitha-exercise/shared/c/68ffb56a-5050-8324-8590-267b1868c24a
 
 
-The Challenge: Casey, a geography student, needs to visualize recent earthquake activity to understand global seismic patterns, plate tectonics, and high-risk zones. This project is a direct response to that need, built as a take-home challenge.
+## The Challenge: 
+Casey, a geography student, needs to visualize recent earthquake activity to understand global seismic patterns, plate tectonics, and high-risk zones. This project is a direct response to that need, built as a take-home challenge.
 
 <!--
 TODO: TAKE SCREENSHOTS OF YOUR FINISHED APP AND REPLACE THESE PLACEHOLDERS
@@ -37,19 +40,7 @@ A desktop and mobile screenshot will show off your responsive design.
 <img src="./public/mockup.png" alt="App Screenshot Desktop" width="80%"/>
 </p>
 
-✨ Key Features
 
-📍 Interactive Global Map: Real-time earthquake data from USGS rendered with react-leaflet.
-
-📊 Accessible Data List: A screen-reader-friendly list of all events, sortable by magnitude or time.
-
-🚀 High-Performance: The heavy EarthquakeMap component is lazy-loaded using React.lazy and <Suspense> to ensure a fast initial page load.
-
-🛡️ Robust Error Handling:
-
-API Errors: Displays a clear error message if the USGS data fails to load.
-
-UI Errors: The map is wrapped in a React ErrorBoundary to prevent the entire application from crashing.
 ## ✨ Key Features
 | Feature                       | Description                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
